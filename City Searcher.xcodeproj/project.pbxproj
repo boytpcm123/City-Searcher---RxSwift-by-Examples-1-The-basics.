@@ -12,9 +12,12 @@
 		B2C5B11620B711EA00ECF880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C5B11420B711EA00ECF880 /* Main.storyboard */; };
 		B2C5B11820B711EC00ECF880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C5B11720B711EC00ECF880 /* Assets.xcassets */; };
 		B2C5B11B20B711EC00ECF880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C5B11920B711EC00ECF880 /* LaunchScreen.storyboard */; };
+		E5F97DEC97C6ECC195307722 /* Pods_City_Searcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CE625337D3BF7FC10A91C6 /* Pods_City_Searcher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4CE625337D3BF7FC10A91C6 /* Pods_City_Searcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_City_Searcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB28A32B68299A03CDA3CE09 /* Pods-City Searcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-City Searcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-City Searcher/Pods-City Searcher.release.xcconfig"; sourceTree = "<group>"; };
 		B2C5B10D20B711EA00ECF880 /* City Searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Searcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C5B11020B711EA00ECF880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C5B11220B711EA00ECF880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B2C5B11720B711EC00ECF880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2C5B11A20B711EC00ECF880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2C5B11C20B711EC00ECF880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC9B9CFE390F0829E82B6E2 /* Pods-City Searcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-City Searcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-City Searcher/Pods-City Searcher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F97DEC97C6ECC195307722 /* Pods_City_Searcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F1349620230C1B026C6D28C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE625337D3BF7FC10A91C6 /* Pods_City_Searcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C540D10DCD8C4FF03FD2FA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9B9CFE390F0829E82B6E2 /* Pods-City Searcher.debug.xcconfig */,
+				AB28A32B68299A03CDA3CE09 /* Pods-City Searcher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B2C5B10420B711EA00ECF880 = {
 			isa = PBXGroup;
 			children = (
 				B2C5B10F20B711EA00ECF880 /* City Searcher */,
 				B2C5B10E20B711EA00ECF880 /* Products */,
+				5C540D10DCD8C4FF03FD2FA9 /* Pods */,
+				0F1349620230C1B026C6D28C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2C5B11F20B711EC00ECF880 /* Build configuration list for PBXNativeTarget "City Searcher" */;
 			buildPhases = (
+				E8A67155731040DA667478FB /* [CP] Check Pods Manifest.lock */,
 				B2C5B10920B711EA00ECF880 /* Sources */,
 				B2C5B10A20B711EA00ECF880 /* Frameworks */,
 				B2C5B10B20B711EA00ECF880 /* Resources */,
+				14C6574A9E7F5C99A587B6FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14C6574A9E7F5C99A587B6FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-City Searcher/Pods-City Searcher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-City Searcher/Pods-City Searcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A67155731040DA667478FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-City Searcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2C5B10920B711EA00ECF880 /* Sources */ = {
@@ -278,14 +345,12 @@
 		};
 		B2C5B12020B711EC00ECF880 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC9B9CFE390F0829E82B6E2 /* Pods-City Searcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "City Searcher/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.studyapp.City-Searcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +360,12 @@
 		};
 		B2C5B12120B711EC00ECF880 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB28A32B68299A03CDA3CE09 /* Pods-City Searcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "City Searcher/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.studyapp.City-Searcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
